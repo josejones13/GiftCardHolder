@@ -24,8 +24,14 @@ app.use(
     secret: process.env.SESSION_SECRET,
     resave: false,
     saveUninitialized: false,
+    cookie: {
+      secure: false,       // must be FALSE on Render Free tier
+      httpOnly: true,
+      sameSite: "lax"
+    }
   })
 );
+
 
 app.use(passport.initialize());
 app.use(passport.session());
