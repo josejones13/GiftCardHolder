@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head><%- include("partials/head") %></head>
+<body>
+<%- include("partials/header") %>
+<div class="container mt-5"><h3>Create Account</h3>
+<form action="/register" method="POST">
+  <input name="firstName" class="form-control mb-2" placeholder="First Name">
+  <input name="lastName" class="form-control mb-2" placeholder="Last Name">
+  <input name="email" class="form-control mb-2" placeholder="Email">
+  <input name="password" type="password" class="form-control mb-2" placeholder="Password">
+  <button class="btn btn-success w-100">Register</button>
+</form></div>
+<%- include("partials/footer") %>
+</body>
+</html>

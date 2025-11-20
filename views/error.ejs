@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Error</title>
+  <%- include("partials/head") %>
+</head>
+<body>
+
+<%- include("partials/header") %>
+
+<div class="container mt-5 text-center">
+  <h1 class="text-danger mb-4"> Something went wrong</h1>
+  <p class="lead"><%= errorMessage %></p>
+
+  <a href="/cards" class="btn btn-primary mt-4">Back to My Cards</a>
+</div>
+
+<%- include("partials/footer") %>
+</body>
+</html>

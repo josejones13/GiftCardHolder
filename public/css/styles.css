@@ -1,0 +1,12 @@
+body { background: #f7f9fb; }
+.card {
+  border-radius: 12px;
+}
+
+.btn-lg {
+  padding: 12px;
+}
+
+h2, h4 {
+  letter-spacing: .5px;
+}
